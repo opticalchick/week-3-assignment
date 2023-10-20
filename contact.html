@@ -9,10 +9,10 @@
 </head>
 
 <body class="bg-dark text-white">
-    <!-- Image and text -->
+    <!-- Start navbar.  Navbar styled using bootstrap and will collapse on a small screen.  Padding set to py-0 to align logo in navbar -->
     <nav class="navbar navbar-expand-lg py-0 navbar-light bg-secondary">
         <a class="navbar-brand py-0" href="#">
-            <img src="Images/MITlogo.png" width="50" height="50" class="d-inline-block align-center"
+            <img src="Images/MITlogocropped.png" width="50" height="50" class="d-inline-block align-center"
                 alt="Michota IT Logo">
             Michota IT Solutions
         </a>
@@ -34,43 +34,62 @@
             </ul>
         </div>
     </nav>
+    <!-- Navbar end -->
+    <!-- This is the main header start -->
     <h1 class="text-center mb-5">Michota IT Solutions</h1>
-    <div>
-    </div>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <form class="mx-5">
-        <h2 class="mx-3 mb-4">Contact Us</h2>
-        <div class="form-row pb-3 mx-2">
-            <div class="col-md-6">
-                <label class="sr-only" for="formControlFirstName">First Name</label>
-                <input type="text" class="form-control" id="formControlFirstName" placeholder="First Name"
-                    required="required">
+    <!-- Main header end -->
+    <!--Start of main content.  Logo used with tags to resize on smaller screen.  Also grid layout used with rows and columns.  Form formatted with bootstrap properties -->
+    <div class="main-container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-md-3 mx-5">
+                <img src="Images/logo_transparent_resize.png" width=300 class="img-fluid pt-lg-5 pt-md-5 pt-sm-0"
+                    alt="Michota IT Logo">
             </div>
-            <div class="col-md-6">
-                <label class="sr-only" for="formControlLastName" id="formControlLastName">Last Name</label>
-                <input type="text" class="form-control" placeholder="Last name" required="required">
-            </div>
+            <!-- Form Start -->
+            <form class="col-md-6">
+                <h2 class="mx-2 mb-4 text-center">Contact Us</h2>
+                <div class="form-row pb-3">
+                    <div class="col-md-6">
+                        <label class="sr-only" for="formControlFirstName">First Name</label>
+                        <input type="text" class="form-control" id="formControlFirstName" placeholder="First Name"
+                            required="required">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="sr-only" for="formControlLastName" id="formControlLastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="sr-only" for="formControlEnterEmail" id="formControlEnterEmail">Email
+                                address</label>
+                            <input type="email" class="form-control" id="formControlEnterEmail"
+                                placeholder="email@example.com" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="sr-only" for="formControlTextArea" id="formControlTextArea">Please enter your
+                                message
+                                below:</label>
+                            <textarea class="form-control" id="text" name="text" placeholder="Type your message here"
+                                rows="5" maxlength="500" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-outline-info mx-3">Send Now</button>
+                </div>
+            </form>
+            <!-- Form/Main content End -->
         </div>
-        <div class="form-group">
-            <div class="col-md-12">
-                <label class="sr-only" for="formControlEnterEmail" id="formControlEnterEmail">Email address</label>
-                <input type="email" class="form-control" id="formControlEnterEmail" placeholder="email@example.com"
-                    required="required">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-12">
-                <label class="sr-only" for="formControlTextArea" id="formControlTextArea">Please enter your message
-                    below:</label>
-                <textarea class="form-control" id="text" name="text" placeholder="Type your message here" rows="5"
-                    maxlength="500" required="required"></textarea>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-outline-info mx-3">Send Now</button>
-    </form>
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
-
+<!-- Footer added.  Bootstrap properties used to center text and keep it on bottom of page -->
 <footer class="text-center fixed-bottom">Michota IT Solutions 2023</footer>
 
 </html>

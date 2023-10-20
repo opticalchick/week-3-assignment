@@ -10,11 +10,11 @@
 
 <body class="bg-dark text-white">
 
-    <!-- Start navbar -->
+    <!-- Start navbar.  Navbar done with bootstrap -->
 
     <nav class="navbar navbar-expand-lg py-0 navbar-light bg-secondary">
         <a class="navbar-brand py-0">
-            <img src="Images/MITlogo.png" width="50" height="50" class="d-inline-block align-center"
+            <img src="Images/MITlogocropped.png" width="50" height="50" class="d-inline-block align-center"
                 alt="Michota IT Logo">
             Michota IT Solutions
         </a>
@@ -44,12 +44,13 @@
 
     <!-- Header end -->
 
-    <!-- Main content start -->
+    <!-- Main content start.  Grid layout using rows and columns -->
 
     <div class="main-container mx-5">
         <div class="row">
             <div class="col-md-3 p-1">
-                <img src="Images/logo_transparent_resize.png" width=300 alt="Michota IT Logo">
+                <img src="Images/logo_transparent_resize.png" width=300 class="img-fluid pt-lg-5 pt-md-5 pt-sm-0"
+                    alt="Michota IT Logo">
             </div>
             <div class="col-md-8 p-2">
                 <p>At Michota IT our mission is to provide outstanding service through knowledge and innovation. We like
@@ -63,6 +64,7 @@
         </div>
     </div>
     <div>
+        <!-- Using bootstrap grid to lay out in rows and columns -->
         <div id="services" class="container text-center mb-5 fs-3">
             <div class="row justify-content-center">
                 <h3>Services Offered</h3>
@@ -79,6 +81,7 @@
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+<!-- Footer added.  Bootstrap properties used to center text and keep it on bottom of page -->
 <footer class="text-center fixed-bottom">Michota IT Solutions 2023</footer>
 
 </html>
